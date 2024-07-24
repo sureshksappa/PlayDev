@@ -29,7 +29,7 @@ jobs:
         run: ls -R ./build # This step helps to verify the build directory contents
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: node-app
           path: ./build # Ensure this path is correct and points to your build output
