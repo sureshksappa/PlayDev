@@ -29,6 +29,7 @@ jobs:
         run: |
           echo "Build directory contents:"
           ls -R .next # Verify the contents of the .next directory
+          if [ ! -d ".next" ]; then echo ".next directory not found!"; exit 1; fi
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -53,6 +54,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: next-app
+
+      - name: Verify downloaded artifact
+        run: |
+          echo "Downloaded artifact contents:"
+          ls -R next-app # Verify the contents of the downloaded artifact
+          if [ ! -d "next-app" ]; then echo "Downloaded artifact not found!"; exit 1; fi
 
       - name: Login to Azure
         uses: azure/login@v2
