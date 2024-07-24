@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <ParticlesComponent />
       <HeadingComponent heading="playDev" />
-      <div className=" relative z-2 w-[950px] max-sm:w-[300px] max-sm:text-center max-sm:pt-8 max-sm:pb-8">
+      <div className="relative z-2 w-[950px] max-sm:w-[300px] max-sm:text-center max-sm:pt-8 max-sm:pb-8">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -22,9 +22,9 @@ export default function Home() {
           Join us at playDev for a thrilling adventure of cryptic hunts and
           puzzle-solving challenges. Our events are designed to push your
           limits, foster teamwork, and enhance problem-solving skills. Whether
-          you're a seasoned puzzle enthusiast or a curious newcomer, playDev
-          offers an unforgettable experience that combines fun and learning in
-          the most exciting way.
+          you&apos;re a seasoned puzzle enthusiast or a curious newcomer,
+          playDev offers an unforgettable experience that combines fun and
+          learning in the most exciting way.
         </motion.p>
       </div>
 
@@ -42,8 +42,9 @@ export default function Home() {
         <CardComponent
           link="mailto:playdevone@gmail.com"
           title="Email"
-          description="playdevone@gmail.com suresh@ajsystems.co.in"
+          description="playdevone@gmail.com suresh's email: suresh@ajsystems.co.in"
         />
+
         <a
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
